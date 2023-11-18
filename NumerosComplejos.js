@@ -16,8 +16,8 @@ class Complejo{
         return {ParteReal: RestaReal, ParteImaginaria: RestaIma}
     }
 
-    MultiplicarComplejos(){
-
+    MultiplicarComplejos(Complejo1, Complejo2){
+        let 
     }
     
 }

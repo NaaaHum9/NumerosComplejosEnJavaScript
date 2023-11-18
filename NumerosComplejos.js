@@ -1,16 +1,19 @@
 class Complejo{
     constructor(){
-        this.ParteReal;
-        this.ParteImaginaria;
+        this.ParteReal = 0;
+        this.ParteImaginaria = 0;
     }
 
-    SumarComplejos(Complejo, Complejo){
-        let SumaReal;
-        let SumaIma;
+    SumarComplejos(Complejo1, Complejo2){
+        let SumaReal = Complejo1.ParteReal + Complejo2.ParteReal;
+        let SumaIma = Complejo1.ParteImaginaria + Complejo2.ParteImaginaria;
+        return {ParteReal: SumaReal, ParteImaginaria: SumaIma}
     }
 
-    RestarComplejos(){
-
+    RestarComplejos(Complejo1, Complejo2){
+        let RestaReal = Complejo1.ParteReal - Complejo2.ParteReal;
+        let RestaIma =  Complejo1.ParteImaginaria - Complejo2.ParteImaginaria;
+        return {ParteReal: RestaReal, ParteImaginaria: RestaIma}
     }
 
     MultiplicarComplejos(){
